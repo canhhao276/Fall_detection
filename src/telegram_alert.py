@@ -1,13 +1,3 @@
-"""
-MÔ-ĐUN CẢNH BÁO TÉ NGÃ TỰ ĐỘNG QUA TELEGRAM BOT (ALERT MODULE)
-----------------------------------------------------------------------
-Chức năng:
-1. Tự động chụp khung hình ảnh tại thời điểm phát hiện người té ngã.
-2. Gửi ảnh chụp kèm tin nhắn cảnh báo khẩn cấp (Emergency Alert) tới Telegram Bot.
-3. Cơ chế Cooldown Timer (thời gian chờ chống spam, mặc định 15s).
-4. Cơ chế Đa luồng bất đồng bộ (Asynchronous Background Threading).
-5. Hỗ trợ cấu hình tiện lợi qua file 'configs/telegram_config.json'.
-"""
 
 import os
 import sys

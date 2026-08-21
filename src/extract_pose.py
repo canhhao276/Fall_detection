@@ -1,13 +1,3 @@
-"""
-BƯỚC 1: TIỀN XỬ LÝ VÀ TRÍCH XUẤT ĐẶC TRƯNG TƯ THẾ (EXTRACTION MODULE)
-----------------------------------------------------------------------
-Chức năng:
-1. Đọc dữ liệu từ bộ dữ liệu chuẩn Le2i Fall Detection Dataset trong thư mục data/.
-2. Đọc file annotation (.txt) để phân tách chính xác khoảng frame té ngã (Fall) và bình thường (No Fall).
-3. Sử dụng MediaPipe Pose trích xuất 33 keypoints (x, y, z, visibility) = 132 chiều/frame.
-4. Cắt chuỗi hành động thành các cửa sổ trượt (Sliding Window: 30 frames, bước trượt step 10 frames).
-5. Lưu kết quả ra data/processed/X_data.npy và data/processed/y_data.npy.
-"""
 
 import os
 import sys

@@ -1,23 +1,3 @@
-"""
-HỆ THỐNG PHÁT HIỆN TÉ NGÃ THỜI GIAN THỰC & CẢNH BÁO TELEGRAM (MAIN ENTRYPOINT)
-=============================================================================
-Đồ án / Dự án Trí Tuệ Nhân Tạo & Thị Giác Máy Tính
-Mô hình: MediaPipe Pose (33 Keypoints) + 2-Layer LSTM Network + Telegram Bot Alert
-
-Hướng dẫn sử dụng:
-1. Nhận diện trực tiếp qua Camera / Video:
-   python main.py --mode detect --source 0
-   python main.py --mode detect --source "data/Home_01/Home_01/Videos/video (15).avi"
-
-2. Kiểm tra kết nối Telegram Bot:
-   python main.py --mode test-telegram
-
-3. Trích xuất đặc trưng từ tập dữ liệu Le2i:
-   python main.py --mode extract
-
-4. Huấn luyện lại mô hình Deep Learning LSTM:
-   python main.py --mode train
-"""
 
 import sys
 import argparse

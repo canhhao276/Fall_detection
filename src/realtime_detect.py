@@ -1,15 +1,3 @@
-"""
-BƯỚC 3 & 4: HỆ THỐNG SUY LUẬN PHÁT HIỆN TÉ NGÃ THỜI GIAN THỰC & CẢNH BÁO TELEGRAM
-----------------------------------------------------------------------------------
-Chức năng:
-1. Hỗ trợ đa nguồn Video: File Video (.avi, .mp4), Webcam vật lý, DroidCam WiFi / USB.
-2. Trích xuất 33 keypoints tức thời bằng MediaPipe Pose và vẽ khung xương người.
-3. Hàng đợi FIFO 30 frames kết hợp mô hình LSTM biên dịch Graph Mode (@tf.function) siêu tốc (>30 FPS).
-4. Phân tích hình học tư thế cơ thể (Posture Analysis): Nếu người ngã VẪN NẰM TRÊN SÀN, 
-   cảnh báo đỏ 'FALL! PERSON DOWN' sẽ DUY TRÌ LIÊN TỤC VÔ THỜI HẠN cho đến khi người đó đứng dậy!
-5. Giao diện HUD Responsive tự co giãn theo độ phân giải màn hình.
-6. Tích hợp cảnh báo đa luồng bất đồng bộ qua Telegram Bot (gửi ảnh snapshot + tin nhắn khẩn cấp).
-"""
 
 import os
 import sys

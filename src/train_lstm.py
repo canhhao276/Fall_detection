@@ -1,15 +1,3 @@
-"""
-BƯỚC 2: HUẤN LUYỆN MÔ HÌNH DEEP LEARNING LSTM (TRAINING MODULE)
-----------------------------------------------------------------
-Chức năng:
-1. Nạp dữ liệu đặc trưng từ data/processed/X_data.npy và data/processed/y_data.npy.
-2. Phân chia tập huấn luyện/kiểm thử (Stratified 80/20 train/validation split).
-3. Tự động tính toán Class Weights để xử lý mất cân bằng dữ liệu (Imbalanced Data).
-4. Xây dựng mạng LSTM 2 tầng + Batch Normalization + Dropout + Dense.
-5. Huấn luyện với các Callbacks: EarlyStopping, ReduceLROnPlateau, ModelCheckpoint.
-6. Lưu mô hình tốt nhất vào models/fall_model.keras.
-7. Vẽ và lưu đồ thị huấn luyện & ma trận nhầm lẫn vào reports/.
-"""
 
 import os
 import sys
