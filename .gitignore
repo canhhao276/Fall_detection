@@ -1,0 +1,23 @@
+# ======================= BẢO MẬT TOKEN & CẤU HÌNH CÁ NHÂN =======================
+configs/telegram_config.json
+
+# ======================= TẬP DỮ LIỆU LỚN & FILE NPY =======================
+# Bỏ qua video dung lượng lớn và mảng dữ liệu > 100MB của GitHub
+data/
+*.npy
+
+# ======================= PYTHON & MÔI TRƯỜNG =======================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+env/
+venv/
+.venv/
+
+# ======================= IDE & HỆ ĐIỀU HÀNH =======================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
